@@ -1,0 +1,9 @@
+.note-manager {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    margin-top: 7rem;
+}
