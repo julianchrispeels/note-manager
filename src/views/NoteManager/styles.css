@@ -5,5 +5,8 @@
 }
 
 .content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     margin-top: 7rem;
+    width: 100%;
 }
