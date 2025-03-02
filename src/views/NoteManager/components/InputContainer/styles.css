@@ -5,17 +5,17 @@
     align-items: flex-start;
     width: 60vh;
     height: 100vh;
-    background-color: #eff1ffd5;
+    background-color: #e0e4ffd5;
 }
 
 .sidebar-head-title {
-    font-size: 1.8rem;
-    padding-left: 20px;
-    margin: 15px 0;
+    font-size: 3rem;
+    padding-left: 2rem;
+    margin: 1.5rem 0;
 }
 
 .sidebar-new-note-box {
-    margin: 0 20px;
+    margin: 0 2rem;
     display: flex;
     flex-direction: column;
     width: 85%;
@@ -24,44 +24,44 @@
 .sidebar-title {
     display: flex;
     flex-direction: column;
-    font-size: 1.3rem;
+    font-size: 2.5rem;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 .sidebar-title-input {
-    margin-top: 2px;
-    padding: 8px;
-    font-size: 1rem;
+    margin-top: 0.2rem;
+    padding: 0.8rem;
+    font-size: 1.6rem;
     border-width: 0;
-    border-radius: 6px;
+    border-radius: 0.6rem;
 }
 
 .sidebar-title-input:hover {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.197);
 }
 
 .sidebar-text-field {
     display: flex;
     flex-direction: column;
-    font-size: 1.3rem;
+    font-size: 2.5rem;
     font-weight: bold;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .sidebar-text-field-input {
-    margin-top: 2px;
-    padding: 8px;
-    height: 150px;
+    margin-top: 0.2rem;
+    padding: 0.8rem;
+    height: 15rem;
     resize: none;
-    font-size: 1rem;
+    font-size: 1.6rem;
     border-width: 0;
-    border-radius: 6px;
+    border-radius: 0.6rem;
 }
 
 .sidebar-text-field-input:hover {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.197);
 }
 
 .sidebar-buttons-container {
@@ -74,17 +74,17 @@
 .sidebar-button-new {
     color: rgb(255, 255, 255);;
     font-weight: bold;
-    font-size: 1rem;
-    margin-top: 10px;
-    padding: 8px 15px;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    padding: 1rem 1.5rem;
     align-self: flex-start;
     border: none;
-    border-radius: 6px;
+    border-radius: 0.6rem;
     background-color: #00d111;
 }
 
 .sidebar-button-new:hover {
-    background-color: #149600;
+    background-color: #18b600;
     cursor: pointer;
 }
 
@@ -93,11 +93,11 @@
     color: white;
     font-weight: bold;
     font-size: 1rem;
-    margin-top: 10px;
-    padding: 8px 15px;
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.5rem;
     align-self: flex-start;
     border: none;
-    border-radius: 6px;
+    border-radius: 0.6rem;
     background-color: #3f63ff;
 }
 
@@ -110,11 +110,11 @@
     color: white;
     font-weight: bold;
     font-size: 1rem;
-    margin-top: 10px;
-    padding: 8px 15px;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
     align-self: flex-start;
     border: none;
-    border-radius: 6px;
+    border-radius: 0.6rem;
     background-color: #ff3535;
 }
 
@@ -126,9 +126,9 @@
 .sidebar-message {
     display: inline-block;
     width: 40%;
-    margin-top: 15px;
-    padding: 10px 20px;
-    border-radius: 6px;
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 0.6rem;
     background-color: #d4ffd0;
     color: #006f18;
     text-align: center;
@@ -139,9 +139,9 @@
 .sidebar-deleted-message {
     display: inline-block;
     width: 40%;
-    margin-top: 15px;
-    padding: 10px 20px;
-    border-radius: 6px;
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 0.6rem;
     background-color: #ffd6d6;
     color: #a70000;
     text-align: center;
@@ -152,9 +152,9 @@
 .sidebar-archived-message {
     display: inline-block;
     width: 40%;
-    margin-top: 15px;
-    padding: 10px 20px;
-    border-radius: 6px;
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 0.6rem;
     background-color: #c1c6ff;
     color: #000e88;
     text-align: center;

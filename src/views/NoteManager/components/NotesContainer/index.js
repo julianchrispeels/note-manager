@@ -15,7 +15,31 @@ export default function NotesContainer({ RemoveNoteFromBox, onEdit, onArchive, n
 		{
 			id: 1,
 			title: 'Note 1',
-			content: 'This is the content of note 1',
+			content: 'This is the content of note 1. This is the content of note 1. This is the content of note 1. This is the content of note 1',
+			isArchived: false,
+		},
+		{
+			id: 3,
+			title: 'Note 3',
+			content: 'This is the content of note 3',
+			isArchived: false,
+		},
+		{
+			id: 4,
+			title: 'Note 4',
+			content: 'This is the content of note 4',
+			isArchived: false,
+		},
+		{
+			id: 5,
+			title: 'Note 5',
+			content: 'This is the content of note 5',
+			isArchived: false,
+		},
+		{
+			id: 6,
+			title: 'Note 6',
+			content: 'This is the content of note 6',
 			isArchived: false,
 		},
 		{
