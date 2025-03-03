@@ -1,3 +1,5 @@
+/* Contenedor completo */
+
 .sidebar-container {
     position: fixed;
     display: flex;
@@ -8,14 +10,22 @@
     background-color: #e0e4ffd5;
 }
 
+/*=================================================================*/
+
+/* Título del encabezado */
+
 .sidebar-head-title {
     font-size: 3rem;
     padding-left: 2rem;
-    margin: 1.5rem 0;
+    margin: 1.5rem 0rem;
 }
 
+/*=================================================================*/
+
+/* Contenedor de crear/editar notas */
+
 .sidebar-new-note-box {
-    margin: 0 2rem;
+    margin: 0 0 0 3rem;
     display: flex;
     flex-direction: column;
     width: 85%;
@@ -64,6 +74,10 @@
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.197);
 }
 
+/*=================================================================*/
+
+/* Botones de la barra lateral */
+
 .sidebar-buttons-container {
     display: flex;
     flex-direction: row;
@@ -79,7 +93,7 @@
     padding: 1rem 1.5rem;
     align-self: flex-start;
     border: none;
-    border-radius: 0.6rem;
+    border-radius: 1.4rem;
     background-color: #00d111;
 }
 
@@ -92,12 +106,12 @@
 .sidebar-button-edit {
     color: white;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-top: 1.5rem;
-    padding: 0.8rem 1.5rem;
+    padding: 1rem 1.5rem;
     align-self: flex-start;
     border: none;
-    border-radius: 0.6rem;
+    border-radius: 1.4rem;
     background-color: #3f63ff;
 }
 
@@ -109,12 +123,12 @@
 .cancel-button {
     color: white;
     font-weight: bold;
-    font-size: 1rem;
-    margin-top: 1rem;
-    padding: 0.8rem 1.5rem;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    padding: 1rem 1.5rem;
     align-self: flex-start;
     border: none;
-    border-radius: 0.6rem;
+    border-radius: 1.4rem;
     background-color: #ff3535;
 }
 
@@ -129,10 +143,10 @@
     margin-top: 1.5rem;
     padding: 1rem 2rem;
     border-radius: 0.6rem;
-    background-color: #d4ffd0;
+    background-color: #a7ff9f;
     color: #006f18;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 1.3rem;
     animation: fadeOut 3s forwards;
 }
 
@@ -142,10 +156,10 @@
     margin-top: 1.5rem;
     padding: 1rem 2rem;
     border-radius: 0.6rem;
-    background-color: #ffd6d6;
+    background-color: #ffcdcd;
     color: #a70000;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 1.3rem;
     animation: fadeOut 3s forwards;
 }
 
@@ -158,7 +172,7 @@
     background-color: #c1c6ff;
     color: #000e88;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 1.3rem;
     animation: fadeOut 3s forwards;
 }
 
@@ -172,4 +186,11 @@
     100% {
         opacity: 0;
     }
+}
+
+/*=================================================================*/
+
+.sidebar-footer {
+    margin: 5rem 0 0 2rem;
+    font-size: 1.5rem;
 }

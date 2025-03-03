@@ -1,23 +1,37 @@
+/* Contenedor completo */
+
 .notes-container {
     display: flex;
     flex-direction: column;
     width: 70vw;
     margin-left: 41%;
+    padding-bottom: 3rem;
 }
 
+/*==============================================================*/
+
+/* Encabezado de la sección de notas */
+
 .notes-head {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: white;
     padding: 0 2rem;
+    width: 70vw;
     border-bottom: 0.1rem solid #ccc;
 }
+
+/* Título del encabezado */
 
 .notes-head-title {
     font-size: 3rem;
     padding-left: 0;
     margin: 1.5rem 0;
 }
+
+/* Seleccionador de notas archivadas/activas */
 
 .notes-selection {
     color: rgb(0, 0, 0);
@@ -36,13 +50,19 @@
     background-color: #c6cdffd5;
 }
 
+/*==============================================================*/
+
+/* Contenedor de las notas */
+
 .notes-grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: auto;
     gap: 3rem;
-    margin: 3rem 3rem 0 3rem;
+    margin: 12rem 3rem 6rem 3rem;
 }
+
+/* Nota individual */
 
 .note-item {
     display: flex;
@@ -58,6 +78,8 @@
     cursor: default;
 }
 
+/* Encabezado de la nota */
+
 .notes-header {
     display: flex;
     justify-content: flex-end;
@@ -67,7 +89,7 @@
 }
 
 :root {
-    --icon-size: 1.6rem;
+    --icon-size: 1.8rem;
     --icon-margin: 0.5rem;
 }
 
@@ -110,6 +132,8 @@
 .note-item-content {
     margin: 1.5rem;
 }
+
+/* Contenido de la nota */
 
 .note-item-title {
     font-size: 2.5rem;

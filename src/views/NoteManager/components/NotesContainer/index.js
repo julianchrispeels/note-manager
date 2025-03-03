@@ -7,47 +7,9 @@ import { faBoxArchive, faBoxesPacking } from "@fortawesome/free-solid-svg-icons"
 
 import './styles.css';
 
-export default function NotesContainer({ RemoveNoteFromBox, onEdit, onArchive, notesArray }) {
+export default function NotesContainer({ onRemove, onEdit, onArchive, notesArray, setFlag, setShowMessage, setNotes, setEditingNote, setShowDeletedMessage }) {
 
 	const [optionSelected, setOptionSelected] = useState(false);
-
-	notesArray = [
-		{
-			id: 1,
-			title: 'Note 1',
-			content: 'This is the content of note 1. This is the content of note 1. This is the content of note 1. This is the content of note 1',
-			isArchived: false,
-		},
-		{
-			id: 3,
-			title: 'Note 3',
-			content: 'This is the content of note 3',
-			isArchived: false,
-		},
-		{
-			id: 4,
-			title: 'Note 4',
-			content: 'This is the content of note 4',
-			isArchived: false,
-		},
-		{
-			id: 5,
-			title: 'Note 5',
-			content: 'This is the content of note 5',
-			isArchived: false,
-		},
-		{
-			id: 6,
-			title: 'Note 6',
-			content: 'This is the content of note 6',
-			isArchived: false,
-		},
-		{
-			id: 2,
-			title: 'Note 2',
-			content: 'This is the content of note 2',
-			isArchived: true,
-		}]
 
 	// Handle the selection change between active and archived notes
 	const handleSelectionChange = (event) => {
@@ -57,7 +19,7 @@ export default function NotesContainer({ RemoveNoteFromBox, onEdit, onArchive, n
 	// Handle the delete note button
 	const handleDeleteNote = (event) => {
 		const noteId = parseInt(event.target.parentElement.parentElement.id);
-		RemoveNoteFromBox(noteId);
+		onRemove(noteId, setShowDeletedMessage, setNotes);
 
 	}
 
@@ -74,10 +36,10 @@ export default function NotesContainer({ RemoveNoteFromBox, onEdit, onArchive, n
 				{notesArray.filter(note => JSON.parse(note.isArchived) === JSON.parse(optionSelected)).map((note) => (
 					<div className="note-item" key={note.id} id={note.id}>
 						<div className="notes-header">
-							<button title={JSON.parse(optionSelected) ? 'Unarchive' : 'Archive'} className='notes-archive-button' onClick={() => onArchive(note, optionSelected)}>
+							<button title={JSON.parse(optionSelected) ? 'Unarchive' : 'Archive'} className='notes-archive-button' onClick={() => onArchive(note, optionSelected, setFlag, setShowMessage, setNotes)}>
 								{JSON.parse(optionSelected) ? <FontAwesomeIcon icon={faBoxesPacking} /> : <FontAwesomeIcon icon={faBoxArchive} />}
 							</button>
-							<button title='Edit' className='notes-edit-button' onClick={() => onEdit(note)}>
+							<button title='Edit' className='notes-edit-button' onClick={() => onEdit(note, setEditingNote)}>
 								<FontAwesomeIcon icon={faPenToSquare} />
 							</button>
 							<button id={note.id} title='Delete' className='notes-delete-button' onClick={handleDeleteNote}>

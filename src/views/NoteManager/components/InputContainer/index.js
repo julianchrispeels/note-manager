@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 import './styles.css';
 
-export default function InputContainer({ AddNote, editingNote, setEditingNote, EditeNote, showDeletedMessage, showArchivedMessage, flag }) {
+export default function InputContainer({ AddNote, editingNote, setEditingNote, EditeNote, showDeletedMessage, showArchivedMessage, flag, setNotes }) {
 
 	const [title, setTitle] = useState('');
 	const [text, setText] = useState('');
@@ -31,13 +31,13 @@ export default function InputContainer({ AddNote, editingNote, setEditingNote, E
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		if (editingNote != null) {
-			EditeNote(title, text);
+			EditeNote(title, text, editingNote, setEditingNote, setNotes);
 		} else if (title && text) {
 			const newNote = {
 				title: title,
 				content: text,
 			};
-			AddNote(newNote);
+			AddNote(newNote, setNotes);
 		}
 		setTitle('');
 		setText('');
@@ -56,7 +56,7 @@ export default function InputContainer({ AddNote, editingNote, setEditingNote, E
 
 	return (
 		<div className='sidebar-container'>
-			<h2 className='sidebar-head-title'>{false ? 'Edit Note' : 'New Note'}</h2>
+			<h2 className='sidebar-head-title'>{editingNote ? 'Edit Note' : 'New Note'}</h2>
 			<form className='sidebar-new-note-box' onSubmit={handleSubmit}>
 				<label className='sidebar-title'>
 					Title
